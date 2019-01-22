@@ -75,8 +75,11 @@ public class UartDemo {
 			// Exception说明
 			if (e.getMessage().equals(com + " port not found!")) {
 
-				System.out.println("Error1:COM设置错误");
+				System.out.println("E1:COM设置错误");
 
+			} else if (e.getMessage().equals("Stream closed")) {
+
+				System.out.println("E2:Stream关闭");
 			}
 
 			e.printStackTrace();
