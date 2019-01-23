@@ -30,19 +30,20 @@ public class UartDemo {
 
 	public static void main(String[] args) {
 
-		new Thread(new Runnable() {
-			public void run() {
-
-				try {
-					Thread.sleep(10 * 1000);
-					closeStream();
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
-		}).start();
+//		new Thread(new Runnable() {
+//			public void run() {
+//
+//				try {
+//					Thread.sleep(10 * 1000);
+//					// 10s后关闭串口
+//					closeStream();
+//				} catch (InterruptedException e) {
+//					e.printStackTrace();
+//				} catch (IOException e) {
+//					e.printStackTrace();
+//				}
+//			}
+//		}).start();
 
 		String host = "comm:" + com + ";baudrate=" + baudrate;
 
