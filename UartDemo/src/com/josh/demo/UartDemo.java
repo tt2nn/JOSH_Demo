@@ -44,7 +44,7 @@ public class UartDemo {
 			byte[] buffer = new byte[256];
 			StringBuffer stringBuffer = null;
 			// 读数据
-			while ((len = inputStream.read(buffer)) != -1) {
+			while (inputStream != null && (len = inputStream.read(buffer)) != -1) {
 
 				stringBuffer = new StringBuffer();
 				for (int i = 0; i < len; i++) {
