@@ -55,7 +55,7 @@ public class SocketDemo {
 			int len = 0;
 			byte[] buffer = new byte[256];
 			// 读数据
-			while (inputStream != null && (len = inputStream.read(buffer)) != -1) {
+			while ((len = inputStream.read(buffer)) != -1) {
 
 				System.out.println(new String(buffer, 0, len, "utf-8"));
 			}
@@ -63,8 +63,15 @@ public class SocketDemo {
 		} catch (IOException e) {
 
 			e.printStackTrace();
-		}
 
+		} finally {
+
+			try {
+				closeStream();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
 	}
 
 	/**
@@ -95,19 +102,16 @@ public class SocketDemo {
 		if (inputStream != null) {
 
 			inputStream.close();
-			inputStream = null;
 		}
 
 		if (outputStream != null) {
 
 			outputStream.close();
-			outputStream = null;
 		}
 
 		if (streamConnection != null) {
 
 			streamConnection.close();
-			streamConnection = null;
 		}
 	}
 }

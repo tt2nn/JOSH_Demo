@@ -44,7 +44,7 @@ public class UartDemo {
 			byte[] buffer = new byte[256];
 			StringBuffer stringBuffer = null;
 			// 读数据
-			while (inputStream != null && (len = inputStream.read(buffer)) != -1) {
+			while ((len = inputStream.read(buffer)) != -1) {
 
 				stringBuffer = new StringBuffer();
 				for (int i = 0; i < len; i++) {
@@ -69,6 +69,14 @@ public class UartDemo {
 			}
 
 			e.printStackTrace();
+
+		} finally {
+
+			try {
+				closeStream();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 	}
 
@@ -100,19 +108,16 @@ public class UartDemo {
 		if (inputStream != null) {
 
 			inputStream.close();
-			inputStream = null;
 		}
 
 		if (outputStream != null) {
 
 			outputStream.close();
-			outputStream = null;
 		}
 
 		if (streamConnection != null) {
 
 			streamConnection.close();
-			streamConnection = null;
 		}
 	}
 }
