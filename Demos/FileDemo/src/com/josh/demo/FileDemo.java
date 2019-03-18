@@ -28,7 +28,7 @@ public class FileDemo {
 
 			// 创建FileConnection , 目前file///Phone/根目录是固定的
 			FileConnection fileConnection = (FileConnection) Connector
-					.open("file///Phone/" + filePath + "/" + fileName);
+					.open("file:///Phone/" + filePath + "/" + fileName);
 
 			if (!fileConnection.exists()) {
 
