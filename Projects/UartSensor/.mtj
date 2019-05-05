@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mtjMetadata jad="UartDemo.jad" version="2.0.1.201901080908">
-   <device group="Josh Device SDK" name="JOSHDeveloperBoard_V0"/>
+<mtjMetadata jad="UartSensor.jad" version="2.0.1.201901080908">
+   <device group="Josh Device SDK" name="JOSHDTUDevice"/>
    <signing projectSpecific="false" signProject="false">
       <alias/>
    </signing>
