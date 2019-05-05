@@ -1,4 +1,4 @@
-package com.josh.sensor.utils;
+package com.joshvm.sensor.utils;
 
 public class Utils {
 

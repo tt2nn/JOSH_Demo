@@ -1,9 +1,9 @@
-package com.josh.sensor;
+package com.joshvm.sensor;
 
-import com.josh.sensor.manager.AccManager;
-import com.josh.sensor.manager.QuateManager;
-import com.josh.sensor.manager.SensorInterface;
-import com.josh.sensor.manager.SensorManager;
+import com.joshvm.sensor.manager.AccManager;
+import com.joshvm.sensor.manager.QuateManager;
+import com.joshvm.sensor.manager.SensorInterface;
+import com.joshvm.sensor.manager.SensorManager;
 
 /**
  * 该项目检测串口相关传感器数据读取

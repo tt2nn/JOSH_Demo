@@ -1,4 +1,4 @@
-package com.josh.sensor.manager;
+package com.joshvm.sensor.manager;
 
 public interface SensorCallback {
 	

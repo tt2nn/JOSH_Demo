@@ -1,4 +1,4 @@
-package com.josh.sensor.constant;
+package com.joshvm.sensor.constant;
 
 public class Constant {
 	

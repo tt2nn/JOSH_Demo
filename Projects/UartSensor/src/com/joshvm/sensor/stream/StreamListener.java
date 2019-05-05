@@ -1,4 +1,4 @@
-package com.josh.sensor.stream;
+package com.joshvm.sensor.stream;
 
 
 public interface StreamListener {

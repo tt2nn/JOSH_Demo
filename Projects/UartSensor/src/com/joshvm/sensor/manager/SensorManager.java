@@ -1,9 +1,8 @@
-package com.josh.sensor.manager;
+package com.joshvm.sensor.manager;
 
-import com.josh.sensor.constant.Constant;
-import com.josh.sensor.stream.StreamFactory;
-import com.josh.sensor.stream.StreamListener;
-import com.josh.sensor.utils.Utils;
+import com.joshvm.sensor.constant.Constant;
+import com.joshvm.sensor.stream.StreamFactory;
+import com.joshvm.sensor.stream.StreamListener;
 
 public abstract class SensorManager {
 

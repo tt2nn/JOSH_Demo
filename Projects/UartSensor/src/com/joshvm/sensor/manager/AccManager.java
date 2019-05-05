@@ -1,7 +1,7 @@
-package com.josh.sensor.manager;
+package com.joshvm.sensor.manager;
 
-import com.josh.sensor.constant.Constant;
-import com.josh.sensor.utils.Utils;
+import com.joshvm.sensor.constant.Constant;
+import com.joshvm.sensor.utils.Utils;
 
 public class AccManager extends SensorManager implements SensorCallback {
 	private SensorInterface sensorInterface;
