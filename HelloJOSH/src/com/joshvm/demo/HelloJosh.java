@@ -1,4 +1,4 @@
-package com.josh.demo;
+package com.joshvm.demo;
 
 /**
  * Hello JOSH

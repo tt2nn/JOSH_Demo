@@ -1,4 +1,4 @@
-package com.josh.demo;
+package com.joshvm.demo;
 
 import java.io.IOException;
 
